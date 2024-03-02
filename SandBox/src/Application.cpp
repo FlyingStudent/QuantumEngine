@@ -76,7 +76,7 @@ int main()
 	float increment = 0.05f;
 	unsigned int program = createProgram(vertexShader, fragmentShader);
 	GLValidate(glUseProgram(program));
-	int location = Exist(program, "u_Colo", relativePath(__FILE__), __LINE__);
+	int location = Exist(program, "u_Color", relativePath(__FILE__), __LINE__);
 	ASSERT(location);
 	while (!glfwWindowShouldClose(window))
 	{
